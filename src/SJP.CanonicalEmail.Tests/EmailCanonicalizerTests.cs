@@ -732,8 +732,6 @@ namespace SJP.CanonicalEmail.Tests
             });
         }
 
-
-
         [Test]
         public async Task CanonicalizeAsync_WhenDnsQueryFails_ReturnsDnsFailureResult()
         {
@@ -773,9 +771,6 @@ namespace SJP.CanonicalEmail.Tests
             });
         }
 
-
-
-
         [Test]
         public async Task CanonicalizeAsync_WhenUnknownEmailProviderReturned_ReturnsUnknownProviderResult()
         {
@@ -807,17 +802,6 @@ namespace SJP.CanonicalEmail.Tests
                 Assert.That(result.Status, Is.EqualTo(EmailResultStatus.UnknownProvider));
             });
         }
-
-
-
-
-
-
-
-
-
-
-
 
         [TestCase("example@example.com")]
         [TestCase("example+test@example.com")]
