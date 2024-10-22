@@ -8,7 +8,7 @@ public class EmailCanonicalizer : IEmailCanonicalizer
 {
     private readonly ILookupClient _dnsClient;
 
-    public EmailCanonicalizer(ILookupClient dnsClient = null)
+    public EmailCanonicalizer(ILookupClient? dnsClient = null)
     {
         _dnsClient = dnsClient ?? new LookupClient();
     }

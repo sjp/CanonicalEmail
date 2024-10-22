@@ -47,8 +47,8 @@ internal static class MailboxProviders
         Rules.PlusAddressing,
         ["zoho.com."]);
 
-    public static readonly IEnumerable<MailboxProvider> All = new List<MailboxProvider>
-    {
+    public static readonly IEnumerable<MailboxProvider> All =
+    [
         Apple,
         Fastmail,
         Google,
@@ -58,5 +58,5 @@ internal static class MailboxProviders
         Yahoo,
         Yandex,
         Zoho,
-    };
+    ];
 }

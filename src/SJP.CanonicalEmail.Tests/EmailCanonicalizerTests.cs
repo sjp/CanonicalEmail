@@ -829,7 +829,7 @@ namespace SJP.CanonicalEmail.Tests
         {
             _mxRecords.Add(CreateMxRecordForDomain("icloud.com"));
 
-            var result = _canonicalizer.Canonicalize(emailAddress);
+            var result = await _canonicalizer.CanonicalizeAsync(emailAddress);
 
             const string expectedEmail = "example@example.com";
 
